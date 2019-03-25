@@ -1,0 +1,66 @@
+{% extends 'layouts/_nav.html' %}
+<title>{% block title %}Journal|Acceuil{% endblock %}</title>
+
+
+
+{% block content %}
+
+
+
+
+<div class="container">
+	<div class="row">
+	   <div class="col-sm-3">
+          <div class="card" style="width: 30rem; margin-left: -30px; ">
+             <img src="static\images\profile.jpg" height="400px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Steven Haward</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="{% url 'about' %}" class="btn btn-primary">About me</a>
+        </div>
+        </div>
+       </div>
+
+       <div class="col-sm-6">
+       	    <br>
+       	   <h4><u>Belle Parole:</u></h4>
+           <blockquote class="quote"> 
+                            <p><i class="fa fa-quote-left"></i>&nbsp;&nbsp;<font color="#1ce" size="5">L</font>a révolution Web a profondément modifié nos modes de vie.
+                            Le progrés technologique doit être partagé par tous et adapté à nos besoin,il doit  nous faciliter la vie en toute simplicite et nous rapprocher de ce qui compte vraiment. </p>
+                            <small style="float: right;">Ecrit Par:&nbsp;Elouasni Hassan</small>
+                            </blockquote>
+                            <hr>
+                            
+                            
+                           
+                            <blockquote class="quote"> 
+                            <p><i class="fa fa-quote-left"></i>&nbsp;&nbsp;<font color="#1ce" size="5">C</font>omment voulez-vous que ne périsse pas celui qui par un aveugle égoïsme, voudra lutter seul contre les intérêts réunis des autres. </p>
+                            <small style="float: right;">Ecrit Par:&nbsp;Marquis de sade</small>
+
+                            </blockquote>
+                            
+                             <hr>
+                            
+                            <blockquote class="quote">
+                             
+                            <p><i class="fa fa-quote-left"></i>&nbsp;&nbsp;<font color="#1ce" size="5">N</font>'oublie jamais, il faut savoir que la première femme qui t'aime durant toute ta vie c'est ta mère. Je t'aime maman de tout mon coeur. </p>
+                            <small style="float: right;">Ecrit Par:&nbsp;Mohamed Cherif</small>
+                            </blockquote>
+                            
+                            <hr>
+
+        </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 30rem;">
+             <img src="static\images\image6.jpg" height="300px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Citation du Jour</h5>
+            <p class="card-text">Exige beaucoup de toi-même et attends peu des autres. Ainsi beaucoup d'ennuis te seront épargnés.</p>
+            <a href="{% url 'about' %}" class="btn btn-primary">Confucius</a>
+        </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+</div>

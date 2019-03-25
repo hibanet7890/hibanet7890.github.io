@@ -1,0 +1,96 @@
+{% extends 'layouts/_nav.html' %}
+<title>{% block title %}Journal|Contact{% endblock %}</title>
+{% block content %} 
+<div class="container">
+	<div class="row">
+	   <div class="col-md-9">                           
+
+
+                            <div class="headline">
+                            	<br>
+                                <h2>Contact Form</h2>
+                            </div>
+                            
+                            <p>Pour comminiquer avec moi voila envoyer moi votre message,sans faut je vais vous répondre.</p>
+                            <br>
+                            <!-- Contact Form -->
+                            <form>
+                                <label>Votre Nom</label>
+                                <div class="row margin-bottom-20">
+                                    <div class="col-md-6 col-md-offset-0">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <label>Votre Email
+                                    <span class="color-red">*</span>
+                                </label>
+                                <div class="row margin-bottom-20">
+                                    <div class="col-md-6 col-md-offset-0">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <label>Votre Message</label>
+                                <div class="row margin-bottom-20">
+                                    <div class="col-md-8 col-md-offset-0">
+                                        <textarea rows="8" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </p>
+                            </form>
+                            <!-- End Contact Form -->
+                            <!-- End Main Content -->
+        
+                        </div>
+                        <!-- End Main Column -->
+                        <!-- Side Column -->
+                        
+            <div class="col-md-3" style="float: right;top: 20px;">
+                            <!-- Recent Posts -->
+                            <div class="card" style="background-color: #ededed;">
+
+                                <div class="card-body">
+
+                                    <h3 class="panel-title">Contact Info</h3>
+                                    <hr border="2">
+                                </div>
+                               
+                                <div class="card-body" style="margin-top: -40px;">
+                                    <p>Lorem ipsum dolor sit amet, no cetero voluptatum est, audire sensibus maiestatis vis et. Vitae audire prodesset an his. Nulla ubique omnesque in sit.</p>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fa-phone color-primary"></i>+353-44-55-66</li>
+                                        <li>
+                                            <i class="fa-envelope color-primary"></i>info@example.com</li>
+                                        <li>
+                                            <i class="fa-home color-primary"></i>http://www.example.com</li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <strong class="color-primary">Monday-Friday:</strong>9am to 6pm</li>
+                                        <li>
+                                            <strong class="color-primary">Saturday:</strong>10am to 3pm</li>
+                                        <li>
+                                            <strong class="color-primary">Sunday:</strong>Closed</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <!-- End recent Posts -->
+                            <!-- About -->
+                            <div class="card" style="background-color: #ededed;">
+                                <div class="card-body">
+                                    <h3 class="panel-title">About</h3>
+                                    <hr border="2">
+                                </div>
+                                <div class="card-body" style="margin-top: -40px;">
+                                    Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat.
+                                </div>
+                            </div>
+            </div>            
+        </div>
+
+</div>
+{% endblock %}

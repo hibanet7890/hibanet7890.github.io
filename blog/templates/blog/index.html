@@ -1,0 +1,35 @@
+{% extends 'layouts/_nav.html' %}
+{% load static %}
+{% block title %}Blog{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog/css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+
+<h1>Blog ({{ posts|length}}Citations)</h1>
+
+
+{% for post in posts %}
+    <article style="background-color: #fff;
+       border: 1px solid #c5c5c5;
+       margin-bottom:2em;
+       padding: 1em;
+       box-shadow: 1px 2px 1px rgb(0,0,0,0.3)">
+    	<h2>{{ post.id }}-{{ post.title }}</h2>
+         <u><p class="time"><time datetime="{{ post.created_at|date:'Y-m-d'}}">Posted {{ post.created_at|date:'Y-m-d'}}</time></p></u>
+    	<p class="body">{{ post.body|truncatewords:6 }}</p>
+        <p><a href="/blog/posts/{{ post.id }}">Lire La suite</a>
+    </article>
+    
+
+    {% empty %}
+       <li> Sorry!pas article a afficher ..</li> 
+
+{% endfor %}
+{% endblock %}
+
+

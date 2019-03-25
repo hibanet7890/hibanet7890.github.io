@@ -1,0 +1,21 @@
+{% extends 'layouts/_nav.html' %}
+<title>{% block title %}Bolg|Show{% endblock %}</title>
+{% block content %}
+
+
+   <h1>Afficher Citation N°{{post.id}}</h1>
+   <article>
+	  <ul>
+    	  <h2>{{post.Title}}</h2>
+    	  <p>{{post.body}}</p>
+    	   <br>
+    	    <p class="time"><time datetime="{{ post.created_at|date:'Y-m-d'}}">Poster il y a {{ post.created_at|timesince }}</time></p>
+    	
+      </ul>   
+    </article>
+    <hr>
+    <p><a href="{% url 'index' %}">All Posts</p>
+
+{% endblock %}
+
+
